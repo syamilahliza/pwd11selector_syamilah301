@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Selector HTML</title>
+        <style>
+            body {
+                font-family: Times New Roman, serif;
+            }
+
+            .container {
+                width: 700px;
+                margin: auto;
+                text-align: center;
+            }
+
+            .input-text {
+                width: 300px;
+                padding: 5px;
+                border: 1px solid #999;
+            }
+
+            .btn {
+                padding: 5px 20px;
+                margin: 3px;
+                border: 1px solid gray;
+                background-color: #e6e6e6;
+                cursor: pointer;
+            }
+
+            .label {
+                font-size: 18px;
+                padding: 6px;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            .logo-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .logo-title img {
+                width: 100px;
+            }
+
+            #judul {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.4;
+            }
+
+            #garis {
+                border: 2px solid #001a66;
+                margin-top: 20px;
+            }
+
+            #alamat {
+                height: 80px;
+                resize: none;
+            }
+
+            #form-table {
+                margin: auto;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 20px;
+                font-size: 14px;
+                color: #666;
+                opacity: 45%;
+            }
+        </style>
+        </head>
+
+        <body>
+
+        <div class="container">
+
+            <div class="logo-title">
+                <img src="asset/image/logo_unindra.png" class="logo">
+                <div id="judul">
+                    UNIVERSITAS INDRAPRASTA PGRI <br>(UNINDRA)<br>
+                    <span style="font-weight: normal;"><strong><i>Jl. Nangka No.58 Tanjung Barat - Jaksel</i></strong></span>
+                </div>
+            </div>
+
+            <hr id="garis">
+
+            <h3><b>BIODATA MAHASISWA</b></h3>
+
+            <form>
+                <table id="form-table">
+                    <tr>
+                        <td class="label">NAMA</td>
+                        <td>:</td>
+                        <td><input type="text" class="input-text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">ALAMAT</td>
+                        <td>:</td>
+                        <td><textarea class="input-text" id="alamat"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">TANGGAL LAHIR</td>
+                        <td>:</td>
+                        <td><input type="date" class="input-text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">TELP</td>
+                        <td>:</td>
+                        <td><input type="text" class="input-text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">EMAIL</td>
+                        <td>:</td>
+                        <td><input type="email" class="input-text"></td>
+                    </tr>
+                </table>
+
+                <div style="margin-top:15px;">
+                    <button class="btn">SIMPAN</button>
+                    <button class="btn">BATAL</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Pemrograman Web Dasar Pertemuan 11 - R3F 202433500301 Syamilah Aprilliza</p>
+        </footer>
+    </body>
+</html>
